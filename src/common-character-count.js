@@ -16,9 +16,11 @@ const { NotImplementedError } = require('../extensions/index.js');
   const arrS1 = s1.split('');
   const arrS2 = s2.split('');
   for (let i = 0; i < arrS1.length; i++) {
+    //console.log(arrS1[i])
     for (let j = 0; j < arrS2.length; j++) {
       if (arrS1[i] == arrS2[j]) {
         count += 1;
+        i = 0;
         arrS1.splice(arrS1[i], 1);
         arrS2.splice(arrS2[j], 1);
       }
