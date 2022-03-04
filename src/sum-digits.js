@@ -12,6 +12,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For 91, the result should be 1 (9 + 1 = 10, 1 + 0 = 1)
  *
  */
+ function getSumOfDigits(matrix) {
+
+}
 
 
 module.exports = {
