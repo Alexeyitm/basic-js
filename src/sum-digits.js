@@ -13,9 +13,17 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
  function getSumOfDigits(matrix) {
+  let result = String(matrix);
+  let count = 0;
+  for (let i = 0; i < result.length; i++) {
+    count += Number(result[i]);
+  }
 
+  if (count > 9) {
+    return getSumOfDigits(count)
+  }
+  else return count
 }
-
 
 module.exports = {
   getSumOfDigits
